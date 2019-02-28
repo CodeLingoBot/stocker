@@ -45,7 +45,7 @@ func SerializeKey(key ssh.PublicKey) string {
 	return string(key.Marshal())
 }
 
-// NotAuthority is intended to be used in conjunction with an SSH CertChecker
+// NotAnAuthority is intended to be used in conjunction with an SSH CertChecker
 // in order to indicate that we are not accepting any certificate as an
 // authority.
 func NotAnAuthority(auth ssh.PublicKey) bool { return false }

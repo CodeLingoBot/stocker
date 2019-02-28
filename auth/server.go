@@ -121,7 +121,7 @@ func (s *server) matchWriteKey(key ssh.PublicKey) bool {
 	return matchKey(key, s.writeKeys)
 }
 
-// AddReaderKey adds a public key that is authorized to connect to the server
+// AddReadKey adds a public key that is authorized to connect to the server
 // and perform only read operations. If the has already been added to the
 // server, this function will update its status.
 // to the server, this function will update its status.
